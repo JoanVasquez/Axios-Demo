@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Playing with Axion</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	
+	<div class="container">
+		<h1>Axios Demo <small>CoderGhost <button class="btn btn-warning" id="cleanButton">Clear</button></small></h1>
+		<div class="jumbotron">
+			<h1>Welcome To Axios</h1>
+			<h4>This application uses Axios. Axios is a promised base HTTP client for JavaScript.</h4>
+		</div>
+
+		<div class="panel panel-primary">
+			<div class="panel-heading">GET Request</div>
+			<div class="panel-body">
+				<button class="btn btn-primary" id="getTodos">Get Todos</button>
+				<div class="panel-body" id="getResultOne"></div>
+			</div>
+		</div>
+
+
+		<div class="panel panel-primary">
+			<div class="panel-heading">GET Request with Parameters</div>
+			<div class="panel-body">
+				<div class="form-group">
+					<input type="text" class="form-control" id="todoId" placeholder="Todo ID...">
+				</div>
+				<button class="btn btn-primary" id="getTodoById">Get Todos</button>
+				<div class="panel-body" id="getResultTwo"></div>
+			</div>
+		</div>
+
+
+		<div class="panel panel-primary">
+			<div class="panel-heading">POST Request</div>
+			<div class="panel-body">
+				<form id="todoInputForm">
+					<div class="form-group">
+						<input type="text" class="form-control" id="todoTitle" placeholder="Todo Title">
+					</div>
+					<button type="submit" class="btn btn-primary">Send</button>
+				</form>
+				
+				<div class="panel-body" id="postResult"></div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
